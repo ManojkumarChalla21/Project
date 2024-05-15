@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E7EFF8;
+}
+
+
+
+.nav {
+  display: flex;
+  background-color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #024F00;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#toggleSidebar:hover {
+  color: red; 
+  text-decoration: underline;
+}
+tr td a:hover{
+  color: red;
+  font-size: larger;
+}
+
+#heading {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #024F00;
+  font-weight: 600;
+}
+
+#mainheading {
+  margin-top: 10px;
+  margin-left: 35%;
+  color: #024F00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 550;
+  font-size: medium;
+}
+
+.nav .last i {
+  background-color: rgb(216, 216, 216);
+  margin-left: 4000%;
+  margin-top: 10px;
+  border-radius: 50%;
+  color: #024F00;
+  font-size: large;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+.side-bar {
+  background: #024F00;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 35px;
+  left: 0;
+  overflow: auto;
+  border-radius: 0px 5px;
+  left: -250px;
+  /* Initially hide the sidebar off-screen to the left */
+  transition: transform 1s ease, opacity 2s ease;
+  /* Add transitions for transform and opacity */
+  opacity: 0;
+  /* Initially hide the sidebar */
+}
+
+.sidebar-open {
+  transform: translateX(250px);
+  /* Slide in the sidebar */
+  opacity: 1;
+  /* Fade in the sidebar */
+}
+
+.side-bar .menu {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-left: 0;
+}
+
+.side-bar .menu .item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 5px;
+  line-height: 40px;
+}
+
+.side-bar .menu .item a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: x-large;
+  border-radius: 10px;
+}
+
+.menu h4 {
+  color: white;
+  margin: 10px;
+  margin-top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.side-bar .menu .item i {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.sub-menu .sub-item {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.sidebar-open {
+  display: block !important;
+  /* Use !important to override inline style */
+}
+
+hr {
+  margin-top: 10px;
+  opacity: 0.45;
+}
+
+.subitem:hover {
+  background-color: #83d273;
+  border-radius: 5px;
+  width: 250px;
+  height: 20px;
+}
+
+.subitem {
+  transition: background-color 0.6s ease, width 0.5s ease;
+  /* Transition for background-color and width */
+}
+
+
+
+
+
+
+
+.middle {
+  margin-left: 250px;
+  display: flex;
+  background: white;
+  margin-top: 5px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.middle input {
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.middle .execute {
+  margin-right: 5px;
+  margin: 5px;
+}
+
+.middle .execute select {
+  margin-right: 5px;
+  width: 200px;
+  height: 30px;
+}
+
+.middle .execute a {
+  padding-inline: 3px;
+  text-decoration: none;
+  color: #024F00;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle .execute a i {
+  color: rgb(111, 111, 111);
+}
+
+
+
+
+
+
+
+
+
+table {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #B8B4B4;
+  border-collapse: collapse;
+  margin-left: 255px;
+  height: 70px;
+  width: 60%;
+}
+
+th {
+  background-color: rgba(2, 79, 0, 0.46);
+  border: 1px solid #B8B4B4;
+}
+
+td {
+  border: 1px solid #B8B4B4;
+  height: 40px;
+  background-color: white;
+}
+
+tr td a {
+  text-decoration: none;
+}
+
+
+
+.add {
+  display: flex;
+  background-color: white;
+}
+
+.add a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #024F00;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#heading {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #024F00;
+  font-weight: 600;
+}
+
+#mainheading {
+  margin-top: 10px;
+  margin-left: 35%;
+  color: #024F00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 550;
+  font-size: medium;
+}
